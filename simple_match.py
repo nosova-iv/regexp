@@ -8,27 +8,27 @@
 # + ab
 # - b
 # - ba
-REGEXP_1 = ''
+REGEXP_1 = r'^a$|^ab$'
 
 # + aab
 # + abb
 # + acb
 # - ab
 # - aabc
-REGEXP_2 = ''
+REGEXP_2 = r'^aab$|^abb$|^acb$'
 
 # + sofia.mp3
 # + sofia.mp4
 # - sofia.mp7
 # - sofia.mp34
-REGEXP_3 = ''
+REGEXP_3 = r'^sofia\.mp[34]$'
 
 # + taverna
 # + versus
 # + vera
 # + zveri
 # - zver
-REGEXP_4 = ''
+REGEXP_4 = r'^taverna$|^versus$|^vera$|^zveri$'
 
 # - a
 # - aa
@@ -39,7 +39,7 @@ REGEXP_4 = ''
 # + bbb
 # - bbbb
 # - ccc
-REGEXP_5 = ''
+REGEXP_5 = r'^aaa$|^bbb$'
 
 # - Ok
 # - OkOk
@@ -49,7 +49,7 @@ REGEXP_5 = ''
 # - abab
 # + ababab
 # - abababab
-REGEXP_6 = ''
+REGEXP_6 = r'^OkOkOk$|^ababab$'
 
 # - aaa
 # - aaa aaa
@@ -58,7 +58,7 @@ REGEXP_6 = ''
 # + Aaa aaa aaa
 # - A
 # - aaa A aaa
-REGEXP_7 = ''
+REGEXP_7 = r'^aaa Aaa aaa$|^aaa aaa Aaa$|^Aaa aaa aaa$'
 
 # + abc
 # + abc03
@@ -67,4 +67,4 @@ REGEXP_7 = ''
 # - Aabc
 # - abc1
 # - #abc
-REGEXP_8 = ''
+REGEXP_8 = r'^abc$|^abc03$|^a-b-c-3$|^a\.b\.c\.0$'
