@@ -42,7 +42,7 @@ class AdvancedSubTest(unittest.TestCase):
             {
                 'one two three': 'two one three',
                 'dog cat wolf': 'cat dog wolf',
-                'goose car rat': 'goose rat car'
+                'goose car rat': 'car goose rat'
             }
         ),
         'REGEXP_5': (
